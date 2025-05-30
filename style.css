@@ -1,0 +1,208 @@
+/* Estilização Geral */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body,html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização do cabeçalho da página (header) */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 2.5vw;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #E73344;
+}
+
+/* Estilização do conteúdo da página (main) */
+main {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #FEF7F8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.courseContainer {
+    width: 40%;
+    height: auto;
+    background-color: #FFFFFF;
+    margin: 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.courseContainer>img {
+    width: 40%;
+    height: auto;
+    border-radius: .5vw;
+}
+
+.courseContainer>div {
+    width: 55%;
+    height: 90%;
+    /* padding: 15px; */
+    /* background-color: #E73344; */
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courseContainer>div>label {
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid black; */
+    align-content: center;
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.courseContainer>div>p {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid black; */
+    align-content: center;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.courseContainer>div>input {
+    width: 100%;
+    height: 30%;
+    align-content: start;
+    outline: none;
+    border: none;
+    /* background-color: #E73344; */
+}
+
+#btn-container {
+    width: 30%;
+    height: 7vh;
+    margin-bottom: 2%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-container>button {
+    width: 50%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: #E73344;
+    border-radius: .5vw;
+    color: #FFFFFF;
+    font-weight: 500;
+
+}
+
+/* Estilização do rodapé da página (footer) */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #170507;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-top: 2px solid #E73344;
+}
+
+
+/*media query*/
+@media  screen and (max-width: 600px) {
+.courseContainer {
+    width: 200%;
+    height: auto;
+    background-color:white;
+    margin: 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+#btn-container {
+    width: 60%;
+}}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .courseContainer {
+        width: 200%;
+        height: auto;
+        background-color:white;
+        margin: 2%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 1vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+    }
+    #btn-container {
+        width: 60%;
+    }
+    .courseContainer>div>label {
+        align-content: center;
+        text-align: center;
+    }
+    .courseContainer>div>p {
+        align-content: center;
+        text-align: center;
+    }}
